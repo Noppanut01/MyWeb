@@ -28,7 +28,7 @@ body {
 .container {
   border-radius: 1rem;
   width: 400px;
-  height: 550px;
+  height: 570px;
   margin: 0 auto;
   background-color: white;
   box-shadow: 10px 10px 10px #646363;
@@ -56,6 +56,7 @@ h1 {
 .info-container .right {
   text-align: right;
   margin: 1rem;
+  color: rgb(124, 123, 123);
   font-size: 0.8rem;
 }
 
@@ -75,6 +76,10 @@ input[type="password"]::placeholder {
   font-size: 0.9rem;
 }
 
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
 .info-container input[type="submit"] {
   border-radius: 0.9rem;
   border: none;
@@ -94,8 +99,9 @@ input[type="password"]::placeholder {
   /* margin: 1rem; */
 
   &.logo-container p {
-    margin: 1rem;
-    font-size: 0.9rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: rgb(124, 123, 123);
   }
   & img {
     margin: 0.5rem;
