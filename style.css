@@ -45,7 +45,7 @@ h1 {
 .info-container {
   display: flex;
   flex-direction: column;
-  text-align: center; /* You can keep this for centering other elements */
+  text-align: center;
 }
 
 .info-container .left {
@@ -58,6 +58,16 @@ h1 {
   margin: 1rem;
   color: rgb(124, 123, 123);
   font-size: 0.8rem;
+}
+
+.info-container .r-right {
+  margin: 1rem;
+  color: rgb(124, 123, 123);
+  font-size: 0.9rem;
+  & a {
+    /* text-decoration: none; */
+    color: rgb(124, 123, 123);
+  }
 }
 
 .info-container input[type="text"],
@@ -109,5 +119,8 @@ input[type="password"]:focus {
     height: 2rem;
     border-radius: 100%;
     object-fit: contain;
+  }
+  & p a {
+    color: rgb(124, 123, 123);
   }
 }
